@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraAccessGUI">
+
+    <ImageView
+        android:id="@+id/CameraAccessGUIlogo_image"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/png_clipart_female_illustration_logo_woman_women_s_beauty_center_purple_face_thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CameraAccessGUIfirst_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="S A F E H E R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/CameraAccessGUIlogo_image" />
+
+    <TextView
+        android:id="@+id/CameraAccessGUIsecond_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spy Camera Feature"
+        android:textColor="#904C77"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/camera_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CameraAccessGUIfirst_textView"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <ImageView
+        android:id="@+id/camera_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CameraAccessGUIsecond_textView" />
+    <TextView
+        android:id="@+id/CameraAccessGUIthird_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="In cases of potential harassment,\nassault, or dangerous situations,\ndiscreetly capturing images or videos\ncan serve as valuable evidence for\nlaw enforcement or legal proceedings."
+        android:textAlignment="center"
+        android:textColor="#904C77"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/CamerabuttonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/camera_image"
+        app:layout_constraintVertical_bias="0.146" />
+    <Button
+        android:id="@+id/CamerabuttonNext"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="212dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Next button"
+        android:text="Next >"
+        android:textColor="#904C77"
+        app:layout_constraintTop_toBottomOf="@id/CameraAccessGUIthird_textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="295dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

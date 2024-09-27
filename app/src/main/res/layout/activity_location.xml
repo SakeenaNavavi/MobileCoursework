@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationGUI">
+
+    <ImageView
+        android:id="@+id/LocationGUIlogo_image"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/png_clipart_female_illustration_logo_woman_women_s_beauty_center_purple_face_thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LocationGUIfirst_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="S A F E H E R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/LocationGUIlogo_image" />
+
+    <TextView
+        android:id="@+id/LocationGUIsecond_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Location"
+        android:textColor="#904C77"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/LocationGUILocation_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LocationGUIfirst_textView"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <ImageView
+        android:id="@+id/LocationGUILocation_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LocationGUIsecond_textView" />
+
+    <TextView
+        android:id="@+id/LocationGUIthird_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="On emergency situation easily share \n\your live location with our friends,\n\family, and closed ones."
+        android:textAlignment="center"
+        android:textColor="#904C77"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/locationbuttonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LocationGUILocation_image"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/locationbuttonNext"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="268dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Next button"
+        android:text="Next >"
+        android:textColor="#904C77"
+        app:layout_constraintTop_toBottomOf="@id/LocationGUIthird_textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="295dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
