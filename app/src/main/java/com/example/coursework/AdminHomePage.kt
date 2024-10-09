@@ -12,7 +12,7 @@ class AdminHomePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.adminhomepage)
 
-
+//test
         val adminListButton: LinearLayout = findViewById(R.id.adminListButton)
         val addAdminButton: LinearLayout = findViewById(R.id.addAdminButton)
 

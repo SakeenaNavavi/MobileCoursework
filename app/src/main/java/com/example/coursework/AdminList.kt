@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class AdminList : AppCompatActivity() {
-
+//test
     private lateinit var nameB1: TextView
     private lateinit var nameB2: TextView
     private lateinit var nameB3: TextView

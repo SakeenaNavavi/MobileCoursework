@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class EmergencyContact : AppCompatActivity() {
-
+//test
     private lateinit var btnCallPolice: Button
     private lateinit var btnCallHospitals: Button
     private lateinit var btnFatherMother: Button
