@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnGuardian" type="id" />
+    <item name="btnAdd" type="id" />
+    <item name="tvTitle" type="id" />
+    <item name="name" type="id" />
+    <item name="nameBox" type="id" />
+    <item name="email" type="id" />
+    <item name="emailBox" type="id" />
+    <item name="phoneNo" type="id" />
+    <item name="phoneNoBox" type="id" />
+    <item name="btnCallPolice" type="id" />
+    <item name="btnCallHospitals" type="id" />
+    <item name="btnFatherMother" type="id" />
+    <item name="btnParents" type="id" />
+    <item name="tvGoBack" type="id" />
+    <item name="socialIcons" type="id" />
+    <item name="fb_facebook_facebook_logo_icon" type="id" />
+    <item name="logo_google_g_icon" type="id" />
+    <item name="apple_iphone_logo_social_social_media_icon" type="id" />
+</resources>
