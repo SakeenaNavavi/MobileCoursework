@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6492"
+    tools:context=".EmergencyContact">
+    <!-- test -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/png_clipart_female_illustration_logo_woman_women_s_beauty_center_purple_face_thumbnail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAFEHER"
+        android:textColor="#904C77"
+        android:textSize="15sp"
+        android:fontFamily="@font/nunito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts Details"
+        android:textColor="#FFFCFD"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:fontFamily="@font/nunito" />
+
+    <Button
+        android:id="@+id/btnCallPolice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="CALL POLICE"
+        android:textColor="#FFFCFD"
+        android:backgroundTint="#904C77"
+        android:fontFamily="@font/nunito" />
+
+    <Button
+        android:id="@+id/btnCallHospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnCallPolice"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="CALL HOSPITALS"
+        android:textColor="#FFFCFD"
+        android:backgroundTint="#904C77"
+        android:fontFamily="@font/nunito" />
+
+    <Button
+        android:id="@+id/btnFatherMother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnCallHospitals"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Father and Mother"
+        android:textColor="#FFFCFD"
+        android:backgroundTint="#904C77"
+        android:fontFamily="@font/nunito" />
+
+    <Button
+        android:id="@+id/btnGuardian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnFatherMother"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="GUARDIAN"
+        android:textColor="#FFFCFD"
+        android:backgroundTint="#904C77"
+        android:fontFamily="@font/nunito" />
+
+    <Button
+        android:id="@+id/btnParents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnGuardian"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="PARENTS"
+        android:textColor="#FFFCFD"
+        android:backgroundTint="#904C77"
+        android:fontFamily="@font/nunito" />
+
+    <TextView
+        android:id="@+id/tvGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnParents"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Click to Go Back"
+        android:textColor="#FFFCFD"
+        android:textSize="25sp"
+        android:fontFamily="@font/nunito" />
+</RelativeLayout>
+

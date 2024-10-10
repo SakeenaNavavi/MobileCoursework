@@ -21,6 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EmergencyContact" />
+        <activity android:name=".HomePage_User" />
+        <activity android:name=".AdminList" />
+        <activity android:name=".AdminHomePage" />
     </application>
 
 </manifest>

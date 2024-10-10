@@ -1,0 +1,113 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCFD"
+    tools:context=".AdminHomePage">
+
+    <!-- test -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/png_clipart_female_illustration_logo_woman_women_s_beauty_center_purple_face_thumbnail" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAFEHER"
+        android:textColor="#904C77"
+        android:textSize="15sp"
+        android:fontFamily="@font/nunito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp" />
+
+
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pngtree_administration_illustration_with_women_on_the_phone_and_talking_many_things_png_image_6122641"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp" />
+
+
+    <LinearLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/illustration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/adminListButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FF6492"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/_34_1341781_about_us_address_communication_contact_contacts_icon_about"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin List"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/nunito"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/addAdminButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FF6492"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/_34_1341781_about_us_address_communication_contact_contacts_icon_about"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Admin"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/nunito"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#FF6492"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
