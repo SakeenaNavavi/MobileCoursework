@@ -19,6 +19,8 @@ class NewAddAdmin : AppCompatActivity() {
 
         db = FirebaseFirestore.getInstance() // Initialize Firestore
 
+        //test comment
+
         val logoImageView: ImageView = findViewById(R.id.logo)
         val illustrationImageView: ImageView = findViewById(R.id.illustration)
         val titleTextView: TextView = findViewById(R.id.title)
