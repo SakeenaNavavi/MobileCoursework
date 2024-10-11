@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FF6492">
+
+    <!-- Horizontal layout to align image and text side by side -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Image for 'SaveHer' -->
+        <ImageView
+            android:id="@+id/upper_left_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/save_her"
+            android:contentDescription="SaveHer App Logo"/>
+
+        <!-- TextView for 'SAFEHER' next to the image -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFEHER"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:contentDescription="App Name Text: SAFEHER"/>
+    </LinearLayout>
+
+    <!-- Dashboard icon at top right corner -->
+    <ImageView
+        android:id="@+id/dashboard_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_dashboard"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Dashboard Icon" />
+
+    <!-- Centered content including logo, self protection tips, etc. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Safety topic -->
+        <TextView
+            android:id="@+id/safety_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safety"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Safety Topic Title" />
+
+        <!-- Logo for SAFEHER -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="App Logo for SAFEHER" />
+
+        <!-- Self Protection Tips Title -->
+        <TextView
+            android:id="@+id/safety_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self Protection Tips"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Self Protection Tips Title" />
+
+        <!-- Tips Content -->
+        <TextView
+            android:id="@+id/safety_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Always be aware of your surroundings and trust your instincts.\nKeep your phone charged and easily accessible.\nCarry a personal safety alarm or whistle.\nLearn basic self-defense techniques.\nAvoid sharing personal information with strangers."
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="8dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif" />
+
+
+        <!-- Button to Access Contacts -->
+        <Button
+            android:id="@+id/access_contacts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="start"
+            android:contentDescription="Access Contacts Button"
+            android:backgroundTint="#E91E63"/>
+    </LinearLayout>
+
+</RelativeLayout>
