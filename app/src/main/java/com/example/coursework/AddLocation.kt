@@ -23,22 +23,20 @@ class AddLocation : AppCompatActivity() {
         messageInput = findViewById(R.id.message_input)
         explafeButton = findViewById(R.id.explafe_button)
 
-        // Set up DatePickerDialog for Time From and Time To
+
         timeFrom.setOnClickListener { showDatePicker(timeFrom) }
         timeTo.setOnClickListener { showDatePicker(timeTo) }
 
-        // Button click event
         explafeButton.setOnClickListener {
             val fromTime = timeFrom.text.toString()
             val toTime = timeTo.text.toString()
             val message = messageInput.text.toString()
 
-            // Handle the input, for example sending the data or processing it
+
             println("From: $fromTime, To: $toTime, Message: $message")
         }
     }
 
-    // Show DatePickerDialog
     private fun showDatePicker(editText: EditText) {
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)

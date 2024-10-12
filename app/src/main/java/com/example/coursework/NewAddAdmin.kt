@@ -28,7 +28,6 @@ class NewAddAdmin : AppCompatActivity() {
             val Password = Password.text.toString()
 
             if (name.isNotEmpty() && email.isNotEmpty() && Password.isNotEmpty()) {
-                // Create a new admin entry
 
                 val adminData = hashMapOf(
                     "name" to name,
@@ -36,7 +35,7 @@ class NewAddAdmin : AppCompatActivity() {
                     "Password" to Password
                 )
 
-                // Add data to Firestore
+
                 db.collection("admins")
                     .add(adminData)
                     .addOnSuccessListener {
