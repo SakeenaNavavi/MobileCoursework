@@ -19,7 +19,7 @@ class CameraAccessGUI :AppCompatActivity()  {override fun onCreate(savedInstance
         insets
     }
 
-
+//This is a comment
     val firstButton: Button = findViewById(R.id.CamerabuttonNext)
     firstButton.setOnClickListener {
         val intent = Intent(this@CameraAccessGUI, LocationGUI::class.java)

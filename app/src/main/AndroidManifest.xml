@@ -24,7 +24,6 @@
             </intent-filter>
         </activity>
 
-
         <activity
             android:name=".RegisterActivity"
             android:exported="true">
@@ -64,6 +63,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".EmergencyContact" />
+        <activity android:name=".HomePage_User" />
+        <activity android:name=".AdminList" />
+        <activity android:name=".AdminHomePage" />
     </application>
 
 </manifest>

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#FFFCFD">
+
+    <!-- Dashboard Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"> <!-- Align to left -->
+
+        <!-- Home Layout with Icon and Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="start">
+
+            <!-- Home Icon -->
+            <ImageView
+                android:id="@+id/icon_home"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home"
+                android:contentDescription="Home Icon"/>
+
+            <!-- Home TextView -->
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Navigate to Home" />
+        </LinearLayout>
+
+        <!-- Settings Layout with Icon and Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="start">
+
+            <!-- Settings Icon -->
+            <ImageView
+                android:id="@+id/icon_settings"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_settings"
+                android:contentDescription="Settings Icon"/>
+
+            <!-- Settings TextView -->
+            <TextView
+                android:id="@+id/text_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Navigate to Settings" />
+        </LinearLayout>
+
+        <!-- Notifications Layout with Icon and Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="start">
+
+
+            <!-- Notifications Icon -->
+            <ImageView
+                android:id="@+id/icon_notifications"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_notifications"
+                android:contentDescription="Notifications Icon"/>
+
+            <!-- Notifications TextView -->
+            <TextView
+                android:id="@+id/text_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Navigate to Notifications" />
+        </LinearLayout>
+
+        <!-- About Us Layout with Icon and Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="start">
+
+            <!-- About Us Icon -->
+            <ImageView
+                android:id="@+id/icon_about_us"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_info"
+                android:contentDescription="About Us Icon"/>
+
+            <!-- About Us TextView -->
+            <TextView
+                android:id="@+id/text_aboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Navigate to About Us"
+                android:text="About Us"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Location Layout with Icon and Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="start">
+
+            <!-- Location Icon -->
+            <ImageView
+                android:id="@+id/icon_location"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_location2"
+                android:contentDescription="Location Icon"/>
+
+            <!-- Location TextView -->
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Navigate to Location" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Replace with wave design -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF6492"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="621dp"/>
+
+</RelativeLayout>

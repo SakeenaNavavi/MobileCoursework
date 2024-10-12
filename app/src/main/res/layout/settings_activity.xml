@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Header Section with Logo and Title -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_margin="16dp">
+
+        <!-- Image for 'SaveHer' -->
+        <ImageView
+            android:id="@+id/upper_left_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/save_her"
+            android:contentDescription="SaveHer App Logo" />
+
+        <!-- App Name TextView -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFEHER"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:contentDescription="App Name Text: SAFEHER" />
+    </LinearLayout>
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <!-- User Avatar Image -->
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:contentDescription="User Avatar"
+            android:layout_gravity="center" />
+
+        <!-- Editable Icon -->
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="24dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_camara"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="-20dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Edit Icon" />
+
+        <!-- Name and Email Fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/user_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FF6492"
+                android:textColorHint="@android:color/black"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:hint="Enter your name" />
+
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FF6492"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:hint="Enter your email"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="@android:color/black"
+            android:background="#FF6492"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="end"
+            android:padding="12dp" />
+    </LinearLayout>
+</RelativeLayout>
