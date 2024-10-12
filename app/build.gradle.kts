@@ -54,6 +54,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.play.services.location)
 
     // Test dependencies
     testImplementation(libs.junit)
@@ -64,5 +65,9 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation ("com.google.firebase:firebase-database:20.3.0")
     implementation ("com.google.firebase:firebase-auth:22.0.0")
+    implementation (libs.glide)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+
 }
 

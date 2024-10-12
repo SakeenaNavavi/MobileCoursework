@@ -25,7 +25,7 @@ class LocationGUI :AppCompatActivity() {
 
         val firstButton: Button = findViewById(R.id.locationbuttonNext)
         firstButton.setOnClickListener {
-            startActivity(Intent(this@LocationGUI, Login::class.java))
+            startActivity(Intent(this@LocationGUI, LoginActivity::class.java))
             finish()
         }
 

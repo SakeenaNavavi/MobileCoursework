@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,7 +23,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".EmergencyContact" />
-        <activity android:name=".HomePage_User" />
         <activity android:name=".AdminList" />
         <activity android:name=".AdminHomePage" />
     </application>

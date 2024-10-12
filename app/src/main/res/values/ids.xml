@@ -5,6 +5,7 @@
     <item name="tvTitle" type="id" />
     <item name="name" type="id" />
     <item name="nameBox" type="id" />
+    <item type="id" name="content" />
     <item name="email" type="id" />
     <item name="emailBox" type="id" />
     <item name="phoneNo" type="id" />
