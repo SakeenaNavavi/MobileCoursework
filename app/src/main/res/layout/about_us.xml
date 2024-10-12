@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Header: App Logo and Name -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_margin="16dp">
+
+        <!-- Image for 'SaveHer' -->
+        <ImageView
+            android:id="@+id/upper_left_icon"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_her"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="end"
+            android:contentDescription="SaveHer App Logo" />
+
+        <!-- App Name TextView -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFEHER"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="SAFEHER: Women's safety application logo text" />
+
+
+    </LinearLayout>
+
+    <!-- Centered Title: Safety at Work and Icon on the right -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <!-- Safety at Work TextView -->
+        <TextView
+            android:id="@+id/safety_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="@android:color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="left"
+            android:contentDescription="Title: Safety at Work" />
+
+        <!-- Icon next to SaveHer text -->
+        <ImageView
+            android:id="@+id/safety_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:contentDescription="Safety Icon" />
+    </LinearLayout>
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="	#FFBDD0">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/safe3"
+            android:layout_marginBottom="13dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="App Logo for SAFEHER" />
+
+        <TextView
+            android:id="@+id/safety_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SaveHer is a dedicated women safety application designed to empower and protect women in their daily lives. Our mission is to create a safer environment by providing essential features such as real-time location sharing, emergency contact alerts, and quick access to local resources. With a user-friendly interface, SaveHer enables women to easily report incidents, seek help, and stay connected with friends and family. We believe that every woman has the right to feel safe and secure, and our application aims to foster confidence and awareness. Join us in making safety a priority, as we work together to create a world where women can thrive without fear."
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="8dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif" />
+
+        <Button
+            android:id="@+id/access_contacts_button"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="Back"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="start"
+            android:contentDescription="Access Contacts Button"
+            android:backgroundTint="#d75782" />
+
+    </LinearLayout>
+
+</RelativeLayout>
