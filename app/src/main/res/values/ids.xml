@@ -18,4 +18,5 @@
     <item name="fb_facebook_facebook_logo_icon" type="id" />
     <item name="logo_google_g_icon" type="id" />
     <item name="apple_iphone_logo_social_social_media_icon" type="id" />
+    <item name="map" type="id" />
 </resources>

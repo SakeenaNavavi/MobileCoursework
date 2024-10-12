@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFCFD"
-    tools:context=".NewAddAdmin">
+    tools:context=".ViewLocation">
 
+    <!-- test -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="30dp"
@@ -18,13 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/illustration"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/pngtree_host_and_admin_marketing_job_vacancies_vector_png_image_6480101"
-        android:layout_marginTop="70dp"
-        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/title"
@@ -38,26 +32,14 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="60dp" />
     <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:id="@+id/nameB1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Full Name"
-        android:textColor="#070707"
-        android:layout_marginTop="250dp"
-        android:layout_marginStart="20dp"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/nameBox"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:layout_below="@id/tvTitle"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Enter your Full name"
+        android:text=""
         android:textColor="#040002"
         android:background="#F98CAD"
         android:gravity="center"
@@ -65,57 +47,67 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
+        android:id="@+id/nameB2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"
-        android:textColor="#070707"
-        android:layout_marginTop="350dp"
-        android:layout_marginStart="20dp"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/emailBox"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@id/tvTitle"
         android:layout_marginStart="16dp"
-        android:hint="Enter your email"
         android:layout_marginEnd="16dp"
-        android:inputType="textEmailAddress"
+        android:text=""
         android:textColor="#040002"
         android:background="#F98CAD"
         android:gravity="center"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp" />
+        android:padding="9dp"
+        android:textSize="16sp" />
+
+
 
     <TextView
-        android:id="@+id/phoneNo"
-        android:layout_width="wrap_content"
+        android:id="@+id/nameB3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="#070707"
-        android:layout_marginTop="450dp"
-        android:layout_marginStart="20dp"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/phoneNoBox"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="175dp"
         android:layout_below="@id/tvTitle"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Enter your password"
+        android:text=""
         android:textColor="#040002"
         android:background="#F98CAD"
         android:gravity="center"
+        android:padding="9dp"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/nameB4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text=""
+        android:textColor="#040002"
+        android:background="#F98CAD"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:padding="9dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/nameB5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text=""
+        android:textColor="#040002"
+        android:background="#F98CAD"
+        android:gravity="left"
+        android:textStyle="bold"
         android:padding="9dp"
         android:textSize="16sp" />
 
@@ -123,13 +115,14 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add to New Admin"
+        android:text="View Location Details"
         android:textColor="#070707"
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
-        android:textSize="24sp"
-        />
-    <!-- test -->
+        android:textSize="24sp" />
+
+
+
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
@@ -139,10 +132,11 @@
         android:layout_marginTop="550dp"
         android:layout_marginRight="50dp"
         android:backgroundTint="#E91E63"
-        android:text="Add"
+        android:text="Back"
         android:textColor="#FFFCFD"
         android:layout_alignParentEnd="true"
         tools:ignore="NotSibling,UnknownId" />
+
 
     <View
         android:layout_width="match_parent"
@@ -150,5 +144,8 @@
         android:background="#FF6492"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="621dp"/>
+
+
 </RelativeLayout>
+
 

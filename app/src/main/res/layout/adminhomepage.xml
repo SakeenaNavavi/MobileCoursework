@@ -24,7 +24,6 @@
         android:text="SAFEHER"
         android:textColor="#904C77"
         android:textSize="15sp"
-        android:fontFamily="@font/nunito"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
         android:layout_marginTop="20dp"
@@ -65,7 +64,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/_34_1341781_about_us_address_communication_contact_contacts_icon_about"
+                android:src="@drawable/contact"
                 app:tint="#FFFFFF" />
 
             <TextView
@@ -73,7 +72,6 @@
                 android:layout_height="wrap_content"
                 android:text="Admin List"
                 android:textColor="#FFFFFF"
-                android:fontFamily="@font/nunito"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -92,7 +90,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/_34_1341781_about_us_address_communication_contact_contacts_icon_about"
+                android:src="@drawable/contact"
                 app:tint="#FFFFFF" />
 
             <TextView
@@ -100,7 +98,6 @@
                 android:layout_height="wrap_content"
                 android:text="Add Admin"
                 android:textColor="#FFFFFF"
-                android:fontFamily="@font/nunito"
                 android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
