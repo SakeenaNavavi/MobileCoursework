@@ -25,7 +25,6 @@
         android:text="SAFEHER"
         android:textColor="#904C77"
         android:textSize="15sp"
-        android:fontFamily="@font/nunito"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
         android:layout_marginTop="20dp"
@@ -39,8 +38,7 @@
         android:textColor="#FFFCFD"
         android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
-        android:textSize="24sp"
-        android:fontFamily="@font/nunito" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnCallPolice"
@@ -52,8 +50,7 @@
         android:layout_marginRight="16dp"
         android:text="CALL POLICE"
         android:textColor="#FFFCFD"
-        android:backgroundTint="#904C77"
-        android:fontFamily="@font/nunito" />
+        android:backgroundTint="#904C77" />
 
     <Button
         android:id="@+id/btnCallHospitals"
@@ -65,8 +62,7 @@
         android:layout_marginRight="16dp"
         android:text="CALL HOSPITALS"
         android:textColor="#FFFCFD"
-        android:backgroundTint="#904C77"
-        android:fontFamily="@font/nunito" />
+        android:backgroundTint="#904C77"/>
 
     <Button
         android:id="@+id/btnFatherMother"
@@ -78,8 +74,7 @@
         android:layout_marginRight="16dp"
         android:text="Father and Mother"
         android:textColor="#FFFCFD"
-        android:backgroundTint="#904C77"
-        android:fontFamily="@font/nunito" />
+        android:backgroundTint="#904C77" />
 
     <Button
         android:id="@+id/btnGuardian"
@@ -91,8 +86,7 @@
         android:layout_marginRight="16dp"
         android:text="GUARDIAN"
         android:textColor="#FFFCFD"
-        android:backgroundTint="#904C77"
-        android:fontFamily="@font/nunito" />
+        android:backgroundTint="#904C77" />
 
     <Button
         android:id="@+id/btnParents"
@@ -104,8 +98,7 @@
         android:layout_marginRight="16dp"
         android:text="PARENTS"
         android:textColor="#FFFCFD"
-        android:backgroundTint="#904C77"
-        android:fontFamily="@font/nunito" />
+        android:backgroundTint="#904C77" />
 
     <TextView
         android:id="@+id/tvGoBack"
@@ -116,7 +109,6 @@
         android:layout_marginTop="75dp"
         android:text="Click to Go Back"
         android:textColor="#FFFCFD"
-        android:textSize="25sp"
-        android:fontFamily="@font/nunito" />
+        android:textSize="25sp"/>
 </RelativeLayout>
 

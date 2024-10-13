@@ -65,7 +65,7 @@ class RegisterActivity : AppCompatActivity() {
         builder.setTitle("Full Name Required")
         builder.setMessage("Please enter your full name to register.")
 
-
+        // Set up the input
         val input = EditText(this)
         builder.setView(input)
 
@@ -103,7 +103,7 @@ class RegisterActivity : AppCompatActivity() {
                         )
                         database.child("Users").child(userId).setValue(userMap)
                         Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show()
-
+                        // Optionally, navigate to the main activity or another screen after registration
                     }
                 } else {
                     Toast.makeText(this, "Registration failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()

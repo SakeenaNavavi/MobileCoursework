@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFCFD"
+    tools:context=".AddLocation">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/png_clipart_female_illustration_logo_woman_women_s_beauty_center_purple_face_thumbnail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAFEHER"
+        android:textColor="#904C77"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        tools:ignore="DuplicateIds,NotSibling" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Location"
+            android:textSize="30sp"
+            android:textColor="#904C77"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="75dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/time_from1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Add Location"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="#904C77"
+            android:backgroundTint="#FF6492"
+            android:padding="10dp"
+            android:textColorHint="#904C77"
+            android:inputType="datetime"
+            android:layout_below="@id/tvTitle"/>
+
+        <EditText
+            android:id="@+id/time_from"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="From"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="#904C77"
+            android:backgroundTint="#FF6492"
+            android:padding="10dp"
+            android:textColorHint="#904C77"
+            android:inputType="datetime"
+            android:layout_below="@id/tvTitle"/>
+
+        <EditText
+            android:id="@+id/time_to"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="To"
+            android:textColor="#904C77"
+            android:backgroundTint="#FF6492"
+            android:padding="10dp"
+            android:layout_marginStart="16dp"
+            android:textColorHint="#904C77"
+            android:inputType="datetime" />
+
+        <ImageView
+            android:id="@+id/to_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Message"
+        android:backgroundTint="#FF6492"
+        android:layout_below="@id/time_container"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:textColorHint="#904C77"
+        android:textColor="#904C77"
+        android:layout_marginStart="10dp"
+        android:paddingLeft="30dp"/>
+
+    <Button
+        android:id="@+id/explafe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textColor="#FFFCFD"
+        android:backgroundTint="#FF6492"
+        android:padding="12dp"
+        android:layout_below="@id/message_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#FF6492"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="660dp"/>
+</RelativeLayout>
